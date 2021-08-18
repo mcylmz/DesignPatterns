@@ -98,5 +98,10 @@ int main() {
     broker->takeOrder(sellStock);
     broker->placeOrders();
 
+    delete stock;
+    delete buyStock;
+    delete sellStock;
+    delete broker;
+    
     return 0;
 }
